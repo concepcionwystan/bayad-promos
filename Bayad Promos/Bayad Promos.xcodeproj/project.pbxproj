@@ -3,27 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595A945EC9DB8C4666191C92 /* Pods_Bayad_Promos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF183460B7E950F0B3BF1B26 /* Pods_Bayad_Promos.framework */; };
 		D0E6C51226CCD104001840C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C51126CCD104001840C1 /* AppDelegate.swift */; };
 		D0E6C51426CCD104001840C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C51326CCD104001840C1 /* SceneDelegate.swift */; };
-		D0E6C51626CCD104001840C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C51526CCD104001840C1 /* ViewController.swift */; };
+		D0E6C51626CCD104001840C1 /* PromosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C51526CCD104001840C1 /* PromosListViewController.swift */; };
 		D0E6C51926CCD104001840C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E6C51726CCD104001840C1 /* Main.storyboard */; };
 		D0E6C51B26CCD10B001840C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E6C51A26CCD10B001840C1 /* Assets.xcassets */; };
 		D0E6C51E26CCD10B001840C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E6C51C26CCD10B001840C1 /* LaunchScreen.storyboard */; };
+		D0E6C52826CCD38A001840C1 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C52726CCD38A001840C1 /* Promo.swift */; };
+		D0E6C53226CCDABC001840C1 /* PromoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C53126CCDABC001840C1 /* PromoNetworkService.swift */; };
+		D0E6C53C26CCE50C001840C1 /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C53B26CCE50C001840C1 /* PromoTableViewCell.swift */; };
+		D0E6C53F26CCFB75001840C1 /* PromoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C53E26CCFB75001840C1 /* PromoDetailsViewController.swift */; };
+		D0E6C54326CD05A1001840C1 /* PUTPromoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6C54226CD05A1001840C1 /* PUTPromoRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0550973BC594C13674CE42FA /* Pods-Bayad Promos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bayad Promos.release.xcconfig"; path = "Target Support Files/Pods-Bayad Promos/Pods-Bayad Promos.release.xcconfig"; sourceTree = "<group>"; };
+		C33EDF30DBBCE7658EEB6C94 /* Pods-Bayad Promos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bayad Promos.debug.xcconfig"; path = "Target Support Files/Pods-Bayad Promos/Pods-Bayad Promos.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E6C50E26CCD104001840C1 /* Bayad Promos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bayad Promos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E6C51126CCD104001840C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E6C51326CCD104001840C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0E6C51526CCD104001840C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0E6C51526CCD104001840C1 /* PromosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromosListViewController.swift; sourceTree = "<group>"; };
 		D0E6C51826CCD104001840C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0E6C51A26CCD10B001840C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E6C51D26CCD10B001840C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E6C51F26CCD10B001840C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E6C52726CCD38A001840C1 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		D0E6C53126CCDABC001840C1 /* PromoNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoNetworkService.swift; sourceTree = "<group>"; };
+		D0E6C53B26CCE50C001840C1 /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
+		D0E6C53E26CCFB75001840C1 /* PromoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailsViewController.swift; sourceTree = "<group>"; };
+		D0E6C54226CD05A1001840C1 /* PUTPromoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUTPromoRequest.swift; sourceTree = "<group>"; };
+		FF183460B7E950F0B3BF1B26 /* Pods_Bayad_Promos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bayad_Promos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595A945EC9DB8C4666191C92 /* Pods_Bayad_Promos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				D0E6C51026CCD104001840C1 /* Bayad Promos */,
 				D0E6C50F26CCD104001840C1 /* Products */,
+				D90C9F1B5B6FA4E7807F3E1D /* Pods */,
+				F5ACA6D43D9962BF39C7480A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,53 @@
 		D0E6C51026CCD104001840C1 /* Bayad Promos */ = {
 			isa = PBXGroup;
 			children = (
+				D0E6C52B26CCD6C5001840C1 /* Requests */,
+				D0E6C52626CCD372001840C1 /* Models */,
 				D0E6C51126CCD104001840C1 /* AppDelegate.swift */,
 				D0E6C51326CCD104001840C1 /* SceneDelegate.swift */,
-				D0E6C51526CCD104001840C1 /* ViewController.swift */,
 				D0E6C51726CCD104001840C1 /* Main.storyboard */,
 				D0E6C51A26CCD10B001840C1 /* Assets.xcassets */,
 				D0E6C51C26CCD10B001840C1 /* LaunchScreen.storyboard */,
 				D0E6C51F26CCD10B001840C1 /* Info.plist */,
+				D0E6C51526CCD104001840C1 /* PromosListViewController.swift */,
+				D0E6C53126CCDABC001840C1 /* PromoNetworkService.swift */,
+				D0E6C53B26CCE50C001840C1 /* PromoTableViewCell.swift */,
+				D0E6C53E26CCFB75001840C1 /* PromoDetailsViewController.swift */,
 			);
 			path = "Bayad Promos";
+			sourceTree = "<group>";
+		};
+		D0E6C52626CCD372001840C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6C52726CCD38A001840C1 /* Promo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0E6C52B26CCD6C5001840C1 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6C54226CD05A1001840C1 /* PUTPromoRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D90C9F1B5B6FA4E7807F3E1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C33EDF30DBBCE7658EEB6C94 /* Pods-Bayad Promos.debug.xcconfig */,
+				0550973BC594C13674CE42FA /* Pods-Bayad Promos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5ACA6D43D9962BF39C7480A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF183460B7E950F0B3BF1B26 /* Pods_Bayad_Promos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0E6C52226CCD10B001840C1 /* Build configuration list for PBXNativeTarget "Bayad Promos" */;
 			buildPhases = (
+				4335A2D2E99E500C26EDF272 /* [CP] Check Pods Manifest.lock */,
 				D0E6C50A26CCD104001840C1 /* Sources */,
 				D0E6C50B26CCD104001840C1 /* Frameworks */,
 				D0E6C50C26CCD104001840C1 /* Resources */,
+				5B54C0E46FDCF525B9DC00A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +189,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4335A2D2E99E500C26EDF272 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bayad Promos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B54C0E46FDCF525B9DC00A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bayad Promos/Pods-Bayad Promos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bayad Promos/Pods-Bayad Promos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bayad Promos/Pods-Bayad Promos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0E6C50A26CCD104001840C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E6C51626CCD104001840C1 /* ViewController.swift in Sources */,
+				D0E6C53C26CCE50C001840C1 /* PromoTableViewCell.swift in Sources */,
+				D0E6C53226CCDABC001840C1 /* PromoNetworkService.swift in Sources */,
+				D0E6C53F26CCFB75001840C1 /* PromoDetailsViewController.swift in Sources */,
+				D0E6C51626CCD104001840C1 /* PromosListViewController.swift in Sources */,
 				D0E6C51226CCD104001840C1 /* AppDelegate.swift in Sources */,
 				D0E6C51426CCD104001840C1 /* SceneDelegate.swift in Sources */,
+				D0E6C52826CCD38A001840C1 /* Promo.swift in Sources */,
+				D0E6C54326CD05A1001840C1 /* PUTPromoRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +387,7 @@
 		};
 		D0E6C52326CCD10B001840C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33EDF30DBBCE7658EEB6C94 /* Pods-Bayad Promos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +407,7 @@
 		};
 		D0E6C52426CCD10B001840C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0550973BC594C13674CE42FA /* Pods-Bayad Promos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

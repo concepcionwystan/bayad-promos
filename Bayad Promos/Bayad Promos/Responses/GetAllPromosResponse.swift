@@ -6,3 +6,6 @@
 //
 
 import Foundation
+struct GetAllPromosResponse: Codable{
+    private(set) var promos: [Promo]!
+}
