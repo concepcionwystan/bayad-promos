@@ -90,33 +90,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-5G-5zt">
-                                <rect key="frame" x="0.0" y="148.5" width="414" height="713.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No promos yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-m2-Fhs">
-                                        <rect key="frame" x="137.5" y="345" width="139.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QVi-gZ-5yq">
-                                        <rect key="frame" x="177" y="269.5" width="60" height="59"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.32470034250000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="ABe-Kw-2Zo"/>
-                                            <constraint firstAttribute="height" constant="60" id="bod-Ej-YaQ"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="x.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QVi-gZ-5yq">
+                                <rect key="frame" x="177" y="368.5" width="60" height="59"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.32470034250000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Unm-m2-Fhs" firstAttribute="centerX" secondItem="Vof-5G-5zt" secondAttribute="centerX" id="AQD-i7-fmd"/>
-                                    <constraint firstItem="Unm-m2-Fhs" firstAttribute="top" secondItem="QVi-gZ-5yq" secondAttribute="bottom" constant="16" id="BmH-Z0-KHR"/>
-                                    <constraint firstItem="Unm-m2-Fhs" firstAttribute="centerY" secondItem="Vof-5G-5zt" secondAttribute="centerY" id="EOs-gx-Np1"/>
-                                    <constraint firstItem="Unm-m2-Fhs" firstAttribute="centerX" secondItem="Vof-5G-5zt" secondAttribute="centerX" id="Njk-S3-ZKp"/>
-                                    <constraint firstItem="QVi-gZ-5yq" firstAttribute="centerX" secondItem="Vof-5G-5zt" secondAttribute="centerX" id="SaD-zl-X4y"/>
+                                    <constraint firstAttribute="width" constant="60" id="ABe-Kw-2Zo"/>
+                                    <constraint firstAttribute="height" constant="60" id="bod-Ej-YaQ"/>
                                 </constraints>
-                            </view>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No promos yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-m2-Fhs">
+                                <rect key="frame" x="137.5" y="436" width="139.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrX-dj-nch">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
@@ -141,24 +128,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PrX-dj-nch" secondAttribute="bottom" id="02w-FS-cv7"/>
-                            <constraint firstItem="Vof-5G-5zt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Iv-BR-H5s"/>
                             <constraint firstItem="PrX-dj-nch" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1mO-H0-tPF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vof-5G-5zt" secondAttribute="trailing" id="4nX-cs-6Q4"/>
+                            <constraint firstItem="Unm-m2-Fhs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KTc-B4-Xqg"/>
                             <constraint firstItem="PrX-dj-nch" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PHa-Kc-6ws"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vof-5G-5zt" secondAttribute="bottom" id="WVs-qp-sXK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="207-J0-SzZ" secondAttribute="bottom" id="YaB-Jd-lzW"/>
                             <constraint firstItem="PrX-dj-nch" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZQT-8V-NAg"/>
                             <constraint firstItem="LeZ-Ks-UO9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ak1-s6-wwG"/>
                             <constraint firstItem="207-J0-SzZ" firstAttribute="top" secondItem="LeZ-Ks-UO9" secondAttribute="bottom" constant="24" id="bmP-KP-dXw"/>
+                            <constraint firstItem="Unm-m2-Fhs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bt6-TB-1Ep"/>
                             <constraint firstItem="207-J0-SzZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eoQ-s5-eoH"/>
-                            <constraint firstItem="Vof-5G-5zt" firstAttribute="top" secondItem="LeZ-Ks-UO9" secondAttribute="bottom" constant="24" id="ogk-SK-Kro"/>
+                            <constraint firstItem="Unm-m2-Fhs" firstAttribute="top" secondItem="QVi-gZ-5yq" secondAttribute="bottom" constant="8" id="iUj-a8-1Er"/>
                             <constraint firstItem="LeZ-Ks-UO9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="qPf-1L-dQa"/>
+                            <constraint firstItem="QVi-gZ-5yq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYd-eB-CZo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="207-J0-SzZ" secondAttribute="trailing" id="yiQ-jK-bpZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cjR-Ul-mRO"/>
                     <connections>
-                        <outlet property="emptyPromosView" destination="Vof-5G-5zt" id="y2X-qa-LRE"/>
+                        <outlet property="emptyImageView" destination="QVi-gZ-5yq" id="e4C-y1-zeT"/>
+                        <outlet property="emptyLabel" destination="Unm-m2-Fhs" id="DYu-Nv-bCM"/>
                         <outlet property="loadingView" destination="PrX-dj-nch" id="IEn-ax-fct"/>
                         <outlet property="promosTableView" destination="207-J0-SzZ" id="rF7-if-bBG"/>
                     </connections>

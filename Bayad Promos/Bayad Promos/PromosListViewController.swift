@@ -13,13 +13,19 @@ class PromosListViewController: UIViewController, UITableViewDelegate, UITableVi
     // MARK:Variables
     private var promosList: [Promo] = []
     private var promoService: PromoNetworkService!
+    var refreshControl: UIRefreshControl?
     
     // MARK:TableView
     @IBOutlet weak var promosTableView: UITableView!
     
     // MARK:Views
-    @IBOutlet weak var emptyPromosView: UIView!
     @IBOutlet weak var loadingView: UIView!
+    
+    // MARK:Labels
+    @IBOutlet weak var emptyLabel: UILabel!
+    
+    // MARK:Images
+    @IBOutlet weak var emptyImageView: UIImageView!
     
     // MARK:Lifecycle Methods
     override func viewDidLoad() {
@@ -28,6 +34,7 @@ class PromosListViewController: UIViewController, UITableViewDelegate, UITableVi
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(sender:)))
         promosTableView.addGestureRecognizer(longPress)
         setupDelegates()
+        addRefreshControl()
         promoService = PromoNetworkService.init()
         callGetPromos()
     }
@@ -48,6 +55,22 @@ class PromosListViewController: UIViewController, UITableViewDelegate, UITableVi
     func setupDelegates(){
         promosTableView.delegate = self
         promosTableView.dataSource = self
+    }
+    
+    func addRefreshControl(){
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refreshList), for: .valueChanged)
+        promosTableView.addSubview(refreshControl!)
+    }
+    
+    func changeLayout(isEmpty: Bool){
+        emptyImageView.isHidden = !isEmpty
+        emptyLabel.isHidden = !isEmpty
+    }
+    
+    @objc func refreshList(){
+        callGetPromos()
+        promosTableView.reloadData()
     }
     
     func callGetPromos(){
@@ -85,10 +108,11 @@ class PromosListViewController: UIViewController, UITableViewDelegate, UITableVi
                 self.loadingView.isHidden = true
                 self.promosList = response
                 if(self.promosList.isEmpty){
-                    self.emptyPromosView.isHidden = false
+                    self.changeLayout(isEmpty: true)
                 } else {
-                    self.emptyPromosView.isHidden = true
+                    self.changeLayout(isEmpty: false)
                 }
+                self.refreshControl?.endRefreshing()
                 self.promosTableView.reloadData()
             }
         }
@@ -96,7 +120,7 @@ class PromosListViewController: UIViewController, UITableViewDelegate, UITableVi
         if let err = error, !success{
             DispatchQueue.main.async {
                 self.loadingView.isHidden = true
-                self.emptyPromosView.isHidden = false
+                self.changeLayout(isEmpty: true)
                 let alert = UIAlertController(title: "Oops!", message: err.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alert, animated: true, completion: nil)
