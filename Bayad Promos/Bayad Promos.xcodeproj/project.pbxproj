@@ -73,6 +73,7 @@
 		D0E6C51026CCD104001840C1 /* Bayad Promos */ = {
 			isa = PBXGroup;
 			children = (
+				D0E6C54626CD20FE001840C1 /* Controllers */,
 				D0E6C52B26CCD6C5001840C1 /* Requests */,
 				D0E6C52626CCD372001840C1 /* Models */,
 				D0E6C51126CCD104001840C1 /* AppDelegate.swift */,
@@ -81,10 +82,8 @@
 				D0E6C51A26CCD10B001840C1 /* Assets.xcassets */,
 				D0E6C51C26CCD10B001840C1 /* LaunchScreen.storyboard */,
 				D0E6C51F26CCD10B001840C1 /* Info.plist */,
-				D0E6C51526CCD104001840C1 /* PromosListViewController.swift */,
 				D0E6C53126CCDABC001840C1 /* PromoNetworkService.swift */,
 				D0E6C53B26CCE50C001840C1 /* PromoTableViewCell.swift */,
-				D0E6C53E26CCFB75001840C1 /* PromoDetailsViewController.swift */,
 			);
 			path = "Bayad Promos";
 			sourceTree = "<group>";
@@ -103,6 +102,15 @@
 				D0E6C54226CD05A1001840C1 /* PUTPromoRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		D0E6C54626CD20FE001840C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0E6C51526CCD104001840C1 /* PromosListViewController.swift */,
+				D0E6C53E26CCFB75001840C1 /* PromoDetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D90C9F1B5B6FA4E7807F3E1D /* Pods */ = {

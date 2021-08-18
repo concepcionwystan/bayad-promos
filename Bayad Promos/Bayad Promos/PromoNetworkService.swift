@@ -11,7 +11,7 @@ import Alamofire
 class PromoNetworkService {
     
     // MARK:Endpoint ID
-    private var endpointID = "c5bef1a7a17c46adb12559a061a2181f"
+    private var endpointID = "4b4e9129ed634e2e86d5944b1d396576"
     
     
     // MARK:GET all promos in homescreen
