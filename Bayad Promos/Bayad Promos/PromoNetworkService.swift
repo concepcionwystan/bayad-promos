@@ -33,7 +33,6 @@ class PromoNetworkService {
     func putPromo(viewController: PromoDetailsViewController, id: String, params: PUTPromoRequest){
         AF.request("https://crudcrud.com/api/\(endpointID)/bayad/\(id)", method: .put, parameters: params, encoder: JSONParameterEncoder.default, headers: nil, interceptor: nil).response { response in
             let res = response.result
-            print(res)
             switch res {
                 case .success( _):
                     viewController.handlePutPromoResponse(success: true, error: nil)
@@ -48,7 +47,6 @@ class PromoNetworkService {
     func deletePromo(viewController: PromosListViewController, id: String){
         AF.request("https://crudcrud.com/api/\(endpointID)/bayad/\(id)", method: .delete).response { response in
             let res = response.result
-            print(res)
             switch res {
                 case .success( _):
                     viewController.handleDeletePromoResponse(success: true, error: nil)
